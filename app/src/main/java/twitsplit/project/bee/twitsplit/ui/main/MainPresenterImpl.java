@@ -14,7 +14,7 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
 import twitsplit.project.bee.twitsplit.adapter.MessageAdapter;
 import twitsplit.project.bee.twitsplit.data.pojo.Message;
-import twitsplit.project.bee.twitsplit.di.di.scope.ActivityContext;
+import twitsplit.project.bee.twitsplit.di.scope.ActivityContext;
 import twitsplit.project.bee.twitsplit.exception.TwitOutOfRangeException;
 import twitsplit.project.bee.twitsplit.ui.main.tweet.MessageSplitter;
 

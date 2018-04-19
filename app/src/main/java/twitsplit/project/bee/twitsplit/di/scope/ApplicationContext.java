@@ -1,4 +1,4 @@
-package twitsplit.project.bee.twitsplit.di.di.scope;
+package twitsplit.project.bee.twitsplit.di.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

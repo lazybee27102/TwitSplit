@@ -1,4 +1,4 @@
-package twitsplit.project.bee.twitsplit.di.di.module;
+package twitsplit.project.bee.twitsplit.di.module;
 
 import android.app.Application;
 import android.content.Context;
@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import twitsplit.project.bee.twitsplit.di.di.scope.ApplicationContext;
+import twitsplit.project.bee.twitsplit.di.scope.ApplicationContext;
 
 @Module
 public class ApplicationModule {

@@ -1,4 +1,4 @@
-package twitsplit.project.bee.twitsplit.di.di.module;
+package twitsplit.project.bee.twitsplit.di.module;
 
 import android.app.Service;
 

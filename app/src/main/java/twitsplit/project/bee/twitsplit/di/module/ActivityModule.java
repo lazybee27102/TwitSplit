@@ -1,12 +1,12 @@
-package twitsplit.project.bee.twitsplit.di.di.module;
+package twitsplit.project.bee.twitsplit.di.module;
 
 import android.app.Activity;
 import android.content.Context;
 
 import dagger.Module;
 import dagger.Provides;
-import twitsplit.project.bee.twitsplit.di.di.scope.ActivityContext;
-import twitsplit.project.bee.twitsplit.di.di.scope.PerActivity;
+import twitsplit.project.bee.twitsplit.di.scope.ActivityContext;
+import twitsplit.project.bee.twitsplit.di.scope.PerActivity;
 import twitsplit.project.bee.twitsplit.ui.main.MainManager;
 import twitsplit.project.bee.twitsplit.ui.main.MainManagerImpl;
 import twitsplit.project.bee.twitsplit.ui.main.MainPresenter;

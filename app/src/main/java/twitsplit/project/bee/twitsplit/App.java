@@ -3,9 +3,9 @@ package twitsplit.project.bee.twitsplit;
 import android.app.Application;
 import android.content.Context;
 
-import twitsplit.project.bee.twitsplit.di.di.component.ApplicationComponent;
-import twitsplit.project.bee.twitsplit.di.di.component.DaggerApplicationComponent;
-import twitsplit.project.bee.twitsplit.di.di.module.ApplicationModule;
+import twitsplit.project.bee.twitsplit.di.component.ApplicationComponent;
+import twitsplit.project.bee.twitsplit.di.component.DaggerApplicationComponent;
+import twitsplit.project.bee.twitsplit.di.module.ApplicationModule;
 
 public class App extends Application {
     private ApplicationComponent appComponent;

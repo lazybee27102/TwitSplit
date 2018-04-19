@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import javax.inject.Inject;
 
 import twitsplit.project.bee.twitsplit.App;
-import twitsplit.project.bee.twitsplit.di.di.component.ActivityComponent;
-import twitsplit.project.bee.twitsplit.di.di.component.DaggerActivityComponent;
-import twitsplit.project.bee.twitsplit.di.di.module.ActivityModule;
+import twitsplit.project.bee.twitsplit.di.component.ActivityComponent;
+import twitsplit.project.bee.twitsplit.di.component.DaggerActivityComponent;
+import twitsplit.project.bee.twitsplit.di.module.ActivityModule;
 
 public class MainActivity extends AppCompatActivity {
     @Inject

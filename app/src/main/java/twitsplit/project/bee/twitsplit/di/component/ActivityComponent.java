@@ -1,8 +1,8 @@
-package twitsplit.project.bee.twitsplit.di.di.component;
+package twitsplit.project.bee.twitsplit.di.component;
 
 import dagger.Component;
-import twitsplit.project.bee.twitsplit.di.di.module.ActivityModule;
-import twitsplit.project.bee.twitsplit.di.di.scope.PerActivity;
+import twitsplit.project.bee.twitsplit.di.module.ActivityModule;
+import twitsplit.project.bee.twitsplit.di.scope.PerActivity;
 import twitsplit.project.bee.twitsplit.ui.main.MainActivity;
 
 @PerActivity
