@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    dataBinding {
+        enabled = true
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "twitsplit.project.bee.twitsplit"
@@ -16,13 +19,35 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
+def supportLibraryVersion = "27.1.1"
+def dagger2 = "2.11"
+def rxjava2 = "2.1.0"
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    // Android support library
+    implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    implementation "com.android.support:animated-vector-drawable:${supportLibraryVersion}"
+    implementation "com.android.support:customtabs:${supportLibraryVersion}"
+    implementation "com.android.support:design:${supportLibraryVersion}"
+    implementation "com.android.support:support-v4:${supportLibraryVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibraryVersion}"
+    // Dagger: Dependency Injection
+    implementation "com.google.dagger:dagger:${dagger2}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${dagger2}"
+    // Testing dependency
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // RxJava2
+    implementation "com.jakewharton.rxbinding2:rxbinding:${rxjava2}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxjava2}"
 }
