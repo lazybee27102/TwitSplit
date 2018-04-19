@@ -98,6 +98,7 @@ public class MainPresenterImpl implements MainPresenter {
     private void splitMessageError(Throwable throwable) {
         if (throwable instanceof TwitOutOfRangeException) {
             Toast.makeText(context, throwable.getMessage(), Toast.LENGTH_SHORT).show();
+            mainView.resetEditText();
         }
     }
 
