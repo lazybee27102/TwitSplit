@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TwitSplit</string>
+    <string name="content_type_your_message_here">Type your message here</string>
 </resources>
